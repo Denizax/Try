@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>date picker: HTML 5</title>
+        <script src="jquery-3.2.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>
+
+
+          cordova.plugins.notification.local.schedule({
+    id: 1,
+    text: "Good morning!",
+    firstAt: tomorrow_at_6_am,
+    every: "day" // "minute", "hour", "week", "month", "year"
+});
+
+
+var today = new Date();
+var tomorrow = new Date();
+tomorrow.setDate(today.getDate()+1);
+tomorrow.setHours(6);
+tomorrow.setMinutes(0);
+tomorrow.setSeconds(0);
+var tomorrow_at_6_am = new Date(tomorrow);
+            
+        </script>
+        
+        
+    </head>
+    
+<body>
+        
+        <form>
+  <label> Date and Time:</label>
+            <input type="datetime-local"/><br>
+            </form>
+        
+
+
+    
+        <div style="display: none;" class="pop-outer">
+        <div class="pop-inner">
+        <button class="close">X</button>
+        <h2>You have choosen your meal!</h2>
+        <p>04.10.2017, dinner, Pasta carbonara</p>
+            </div>
+        </div>
+    
+   </body>
+            
+            
+</html>
