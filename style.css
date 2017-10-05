@@ -1,0 +1,23 @@
+
+
+
+.container{
+    
+    margin:0 auto;
+    text-align:center;
+ 
+    
+}
+
+li{
+    display:inline-block;
+    padding:30px;
+    font-size:30px;
+    
+     
+}
+
+li a{
+    text-decoration:none;
+    color:#ff6666;
+}
